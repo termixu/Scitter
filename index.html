@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Scitter — мышь убегает от кота</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div class="info">
+            <p>🐭 Управляй мышкой: стрелки <strong>← ↑ ↓ →</strong> или <strong>WASD</strong></p>
+            <p>🐱 Кот Termix охотится за тобой. Собирай 🧀 сыр, чтобы получить очки!</p>
+            <p>⚡ Чем дольше бежишь — тем быстрее становится кот</p>
+        </div>
+        <div class="score-panel">
+            🧀 Счёт: <span id="scoreValue">0</span>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
