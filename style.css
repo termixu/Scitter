@@ -1,0 +1,108 @@
+/* style.css — 8bit стиль для игры Scitter */
+/* Кот Termix одобряет 🐱💚 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none; /* чтобы дети случайно не выделили текст */
+}
+
+body {
+    background: linear-gradient(145deg, #0a0f0a 0%, #050805 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', 'VT323', monospace;
+    padding: 20px;
+}
+
+.game-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    border: 4px solid #2a5a1a;
+    border-radius: 12px;
+    box-shadow: 0 0 0 2px #0a1f0a, 0 0 0 6px #00ff41, 0 0 20px rgba(0, 255, 65, 0.4);
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    background-color: #0c100c;
+}
+
+.info {
+    background: #0a0f0a;
+    border: 2px solid #1d3d1a;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #66ff66;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: inset 0 0 6px #00ff4122, 0 4px 8px #00000044;
+    backdrop-filter: blur(2px);
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.info p {
+    margin: 6px 0;
+}
+
+.info strong {
+    color: #bbff99;
+    background: #1a2a1a;
+    padding: 2px 6px;
+    border-radius: 12px;
+    font-weight: normal;
+}
+
+.score-panel {
+    background: #0a0f0a;
+    color: #00ff41;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: monospace;
+    padding: 8px 24px;
+    border-radius: 40px;
+    border: 2px solid #2a5a1a;
+    box-shadow: 0 0 10px #00ff4166;
+    backdrop-filter: blur(4px);
+    letter-spacing: 2px;
+}
+
+#scoreValue {
+    color: #ffcc44;
+    font-size: 32px;
+    margin-left: 10px;
+    background: #0a1a0a;
+    padding: 2px 12px;
+    border-radius: 30px;
+    display: inline-block;
+    min-width: 80px;
+    text-align: center;
+    border: 1px solid #bbff99;
+}
+
+/* Адаптивность для телефонов 📱 */
+@media (max-width: 860px) {
+    canvas {
+        width: 95vw;
+        height: auto;
+    }
+    .score-panel {
+        font-size: 20px;
+        padding: 4px 16px;
+    }
+    #scoreValue {
+        font-size: 26px;
+    }
+    .info {
+        font-size: 12px;
+    }
+}
