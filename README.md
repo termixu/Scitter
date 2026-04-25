@@ -28,51 +28,49 @@
 
 ## 🗂️ Структура проекта (что где лежит)
 
-termix-cat-and-mouse/               # Корень проекта
-│
-├── index.html                      # Главная страница
-├── style.css                       # Стили (оформление)
-├── game.js                         # ДВИЖОК (отвечает преподаватель)
-│
-├── assets/                         # Все изображения и звуки
-│   │
-│   ├── sprites/                    # Ученик 1: Персонажи
-│   │   ├── cat.png
-│   │   ├── mouse.png
-│   │   ├── cat_walk.gif
-│   │   └── mouse_run.gif
-│   │
-│   ├── textures/                   # Ученик 2: Текстуры окружения
-│   │   ├── background.png          # Фон бункера
-│   │   ├── floor.png               # Пол
-│   │   ├── wall.png                # Стены
-│   │   └── trap.png                # Ловушка
-│   │
-│   ├── items/                      # Ученик 3: Модельки (предметы)
-│   │   ├── cheese.png
-│   │   ├── powerup.png
-│   │   └── slowdown.png
-│   │
-│   └── sounds/                     # (Опционально)
-│       ├── meow.mp3
-│       ├── squeak.mp3
-│       ├── winner.mp3
-│       └── gameover.mp3
-│
-├── levels/                         # Ученик 5: Локации (уровни)
-│   ├── level1.json
-│   ├── level2.json
-│   └── level3.json
-│
-├── scripts/                        # Дополнительные скрипты
-│   ├── input.js                    # Управление с клавиатуры
-│   ├── obstacles.js                # Ученик 6: Препятствия
-│   └── eastereggs.js               # Ученик 4: Пасхалки
-│
-└── docs/                           # Документация
-    ├── setup.md                    # Как установить и запустить
-    ├── git-guide.md                # Как работать с ветками
-    └── ideas.md                    # Идеи для улучшений
+termix-cat-and-mouse/
+    index.html
+    style.css
+    game.js
+
+    assets/
+        sprites/
+            cat.png
+            mouse.png
+            cat_walk.gif
+            mouse_run.gif
+
+        textures/
+            background.png
+            floor.png
+            wall.png
+            trap.png
+
+        items/
+            cheese.png
+            powerup.png
+            slowdown.png
+
+        sounds/
+            meow.mp3
+            squeak.mp3
+            winner.mp3
+            gameover.mp3
+
+    levels/
+        level1.json
+        level2.json
+        level3.json
+
+    scripts/
+        input.js
+        obstacles.js
+        eastereggs.js
+
+    docs/
+        setup.md
+        git-guide.md
+        ideas.md
 
 ## 🧑‍🤝‍🧑 Твоя роль в команде
 
