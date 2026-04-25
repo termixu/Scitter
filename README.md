@@ -28,10 +28,10 @@
 
 ## 🗂️ Структура проекта (что где лежит)
 
-termix-cat-and-mouse/
-    index.html
-    style.css
-    game.js
+    termix-cat-and-mouse/
+        index.html
+        style.css
+        game.js
 
     assets/
         sprites/
